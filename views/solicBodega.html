@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLICITUD DE BODEGA</title>
+    <link rel="stylesheet" href="../vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/material.css">
+</head>
+<body>
+
+  <div class="container">
+    <header class="py-3"><h1>PETICIÓN DE BODEGA</h1>
+      <div class="d-grid gap-2 col-3">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Resgistro</button>
+        
+      </div>
+  </header>
+  <table class="table">
+    <thead class="table-light">
+     <tr>
+      <th>Nombre</th>
+      <th>Cantidad</th>
+      <th>Descripción</th>
+      <th>Fecha</th>
+      <th>Precio por unidad</th>
+      <th></th>
+     </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Codo</td>
+      <td>10</td>
+      <td>20 pulgadas</td>
+      <td>24/08/2023</td>
+      <td>2.500</td>
+      <td>
+        <button class="btn btn-outline-info">Editar</button>
+        <button class="btn btn-outline-danger">Eliminar</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+  </div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+  <div class="modal-header">
+    <h1 class="modal-title fs-5" id="exampleModalLabel">Registro del material</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+    <form>
+        <div class="mb-3">
+            <label for="exampleInputCodigo" class="form-label">Codigo</label>
+            <input type="number" class="form-control" id="exampleInputprecioUnidadCodigo">
+          </div>
+      <div class="mb-3">
+        <label for="exampleInputNombre" class="form-label">Nombre de la mercancia</label>
+        <input type="text" class="form-control" id="exampleInputNombre">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputCantidad" class="form-label">Cantidad</label>
+        <input type="number" class="form-control" id="exampleInputCantidad">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputDescripcion" class="form-label">Descripcion</label>
+        <textarea class="form-control" id="exampleInputDescripcion"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+  </div>
+</div>
+</div>
+</div>
+ 
+    
+<script src="../vendor/js/bootstrap.min.js"></script>
+     
+    
+</body>
+</html>
