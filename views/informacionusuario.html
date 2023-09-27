@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INVENTARIO ACUEDUCTO</title>
+    <link rel="stylesheet" href="../vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/estiloLogin.css">
+</head>
+<body>
+    <form>
+        <div class="row">
+            <label for="inputNombres" class="form-label">Nombres</label>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Primer Nombre" aria-label="Primer Nombre">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Segundo Nombre" aria-label="Segundo Nombre">
+            </div>
+            <label for="inputApellidos" class="form-label">Apellidos</label>
+            <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Primer Apellido" aria-label="Primer Apellido">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Segundo Apellido" aria-label="Segundo Apellido">
+                </div>
+              </div>
+          </div>
+        <div class="mb-3">
+            <label for="inputCedula" class="form-label">Cedula</label>
+            <input type="number" class="form-control" id="inputCedula">
+          </div>
+
+        <div class="mb-3">
+            <label for="start">Fecha de Nacimiento: </label>
+
+           <input type="month" type="days" id="start" name="start" min="2000-03" value="2018-05" />
+
+        </div>
+        
+        
+        <button type="Ingresar" class="btn btn-primary">Ingresar</button>
+      </form>
+</body>
+</html>
